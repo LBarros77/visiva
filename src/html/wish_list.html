@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  @@include('./_head.html', {
+  "path": "../..",
+  "title": "Pixel Bootstrap 5 - Sign up"
+  })
+</head>
+
+<body>
+  @@include('./_navigation.html', {
+  "path": "../..",
+  "page": "wish_list",
+  "classes": "navbar-black navbar-theme-white"
+  })
+  <main>
+
+    <!-- @@include('./_preloader.html', {
+    "path": "../.."
+    }) -->
+
+    <div class="container">
+      <div class="row row-cols-sm-2 row-cols-md-3 row-cols-xl-4">
+        <div class="row">
+          <!-- Implement a conditional if empt page -->
+          <!-- A botton to go redirect fo initial page if empt -->
+          <div class="col-12 col-md-6">
+              <div class="card shadow">
+                  <img src="../../assets/img/shop/item-1.png" alt="black watch"> 
+                  <div class="card-footer border-top border-gray-300 p-4">
+                      <a href="#" class="h5">Apple Watch Series 3</a>
+                      <h3 class="h6 fw-light text-gray mt-2">Space Gray Aluminum Case with Black Sport Band</h3>
+                      <div class="d-flex mt-3">
+                          <span class="star fas fa-star text-warning me-1"></span> 
+                          <span class="star fas fa-star text-warning me-1"></span> 
+                          <span class="star fas fa-star text-warning me-1"></span> 
+                          <span class="star fas fa-star text-warning me-1"></span> 
+                          <span class="star fas fa-star text-warning"></span> 
+                          <span class="badge bg-primary ms-2">4.7</span>
+                      </div>
+                      <div class="d-flex justify-content-between align-items-center mt-3">
+                          <span class="h5 mb-0 text-gray">$299.00</span> 
+                          <a class="btn btn-xs btn-tertiary" href="#">
+                              <span class="fas fa-cart-plus me-2"></span> Add to cart
+                          </a>
+                      </div>
+                  </div>
+              </div> 
+          </div>
+      </div>
+      </div>
+    </div>
+  </main>
+  @@include('./_footer.html', {
+    "path": ".",
+    "classes": "bg-primary text-white"
+  })
+
+  @@include('./_scripts.html', {
+    "path": "."
+  })
+</body>
+</html>
